@@ -13,7 +13,18 @@ Built to explore the practical applications of **MediaPipe** in health and fitne
 
 ## 📸 Demo
 
-> *[Insert a GIF or Screenshot of your project running here. Seeing the skeleton overlay in action makes a huge difference!]*
+<img width="372" height="292" alt="image" src="https://github.com/user-attachments/assets/24e74b56-0494-47fc-821b-3f74adcdf90b" />
+<img width="394" height="270" alt="image" src="https://github.com/user-attachments/assets/a2deccfe-5961-4f39-ac83-f9ece341e13d" />
+
+<img width="368" height="292" alt="image" src="https://github.com/user-attachments/assets/97a60cc7-558b-49c6-aff8-00d3f8f58b4f" />
+<img width="368" height="277" alt="image" src="https://github.com/user-attachments/assets/551fbe82-c12f-439a-bc55-1de2d327d04f" />
+
+<img width="360" height="299" alt="image" src="https://github.com/user-attachments/assets/5aa299b0-cc5f-49ac-b1dd-a85ae422cbd5" />
+<img width="468" height="277" alt="image" src="https://github.com/user-attachments/assets/6ef5b5fa-5442-4007-aae2-1cc82159adc8" />
+
+
+
+
 
 ## 🚀 How It Works
 
