@@ -4,16 +4,14 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green?style=for-the-badge&logo=opencv&logoColor=white)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-Pose%20Estimation-orange?style=for-the-badge)
 
-
-A real-time computer vision application that helps users maintain correct yoga posture. It acts as a virtual trainer by detecting body landmarks and calculating joint angles to provide instant feedback (e.g., "Straighten your knee").
-
-Built to explore the practical applications of **MediaPipe** in health and fitness tech.
+Ever tried practicing yoga alone and wondered, *"Am I even doing this right?"* I built **Yoga Pose Corrector** to solve that. It’s a computer vision tool that acts like a supportive gym buddy. It watches your form in real-time through your webcam, calculates your joint angles, and gives you instant, specific feedback (like "Straighten your leg!") so you can improve your posture safely.
 
 ---
+
 ## 📸 Demo
 
 <p align="center">
-  Real-time analysis and feedback: The system detects key landmarks and calculates joint angles to categorize posture as "Fighting" (incorrect) or "Perfect".
+  Here is the system in action. It detects key body points and instantly categorizes your form as "Fighting" (needs work) or "Perfect".
 </p>
 
 <table align="center">
@@ -55,33 +53,33 @@ Built to explore the practical applications of **MediaPipe** in health and fitne
   </tr>
 </table>
 
-
 ## 🚀 How It Works
 
-The core of this application relies on vector geometry and thresholding:
+It’s not magic, it’s geometry! Here is the breakdown:
 
-1.  **Landmark Detection:** Uses the MediaPipe Blazepose model to extract 33 distinct $(x, y)$ coordinates for the user's body.
-2.  **Angle Calculation:** It calculates the angle between three distinct keypoints (e.g., Hip $\rightarrow$ Knee $\rightarrow$ Ankle) using trigonometric functions (`atan2`).
-3.  **Heuristic Logic:** The calculated angles are compared against a dataset of "correct" pose ranges. If the user falls outside these ranges, the UI flags the specific error.
+1.  **It Sees You:** Using **MediaPipe**, the code finds 33 specific points on your body (shoulders, hips, knees, etc.) from the video feed.
+2.  **It Measures You:** It calculates the geometric angles between these points. For example, to check if your arm is straight, it measures the angle at your elbow.
+3.  **It Coaches You:** We compare your angles against "Gold Standard" ranges. If your knee is bent at 140° but needs to be 180°, the program flags it and tells you exactly how to fix it.
 
-## ✨ Features
+## ✨ Key Features
 
-* **Zero Latency:** Optimized for real-time performance on standard CPU hardware.
-* **Privacy Focused:** No video data is sent to the cloud; everything runs locally.
-* **Visual Feedback:** Dynamic skeleton overlay that changes color based on pose accuracy.
-* **Pose Library:** (Currently supports: *Tree Pose*, *Warrior II*, *Plank*) - *[Edit this list based on your actual code]*
+* **Runs on your Laptop:** No expensive GPU needed. I optimized this to run smoothly on standard CPUs.
+* **Privacy First:** Everything runs locally on your machine. No video of you is ever sent to the cloud.
+* **Visual Feedback:** The skeleton overlay turns Green when you are correct and Red when you need to adjust.
+* **Current Poses:** Supports *Tree Pose*, *Warrior II*, and *T-Pose* calibration.
 
 ## 🛠️ Tech Stack
 
-* **Language:** Python
-* **Core Libraries:** `opencv-python`, `mediapipe`, `numpy`
-* **Math:** Trigonometry for vector angle calculation
+* **Python** (The logic)
+* **OpenCV** (The eyes)
+* **MediaPipe** (The brain/pose estimation)
+* **NumPy** (The math)
 
 ## ⚡ Getting Started
 
 ### Prerequisites
 
-Make sure you have Python installed. It is recommended to use a virtual environment.
+You just need Python installed. I recommend using a virtual environment so things stay clean.
 
 ### Installation
 
