@@ -6,8 +6,6 @@ I started this because I kept practicing yoga alone with no idea if my form was 
 
 ## Demo
 
-![demo](PASTE_YOUR_DEMO_GIF_URL_HERE)
-
 Runs locally against your webcam — OpenCV opens a native window, so this isn't a hosted web app right now. See below for how to run it yourself.
 
 ### Screenshots
